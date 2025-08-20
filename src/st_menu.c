@@ -1,3 +1,4 @@
+#include "st_curses.h"
 #include "st_menu.h"
 
 #include <ctype.h>

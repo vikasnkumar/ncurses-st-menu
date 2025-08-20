@@ -3,7 +3,6 @@
 #define _ST_MENU_H
 
 #include <stdbool.h>
-#include "st_curses.h"
 
 #define ST_MENU_STYLE_MCB			0
 #define ST_MENU_STYLE_MC			1

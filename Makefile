@@ -19,7 +19,11 @@ else
 endif
 
 ifdef PKG_CONFIG
-PKG_CONFIG_PATH = `$(PKG_CONFIG) --variable pc_path pkg-config|cut -d: -f1`
+  ifdef LIBDIR
+    PKG_CONFIG_PATH = $(LIBDIR)/pkgconfig
+  else
+    PKG_CONFIG_PATH = `$(PKG_CONFIG) --variable pc_path pkg-config|cut -d: -f1`
+  endif
 PKG_CONFIG_TARGET = st_menu.pc.install
 endif
 
