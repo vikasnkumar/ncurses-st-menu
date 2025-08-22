@@ -168,6 +168,7 @@ extern struct ST_CMDBAR *st_cmdbar_new(ST_MENU_CONFIG *config, ST_CMDBAR_ITEM *c
 extern void st_cmdbar_post(struct ST_CMDBAR *cmdbar);
 extern void st_cmdbar_unpost(struct ST_CMDBAR *cmdbar);
 extern void st_cmdbar_free(struct ST_CMDBAR *cmdbar);
+extern bool st_cmdbar_driver(struct ST_CMDBAR *menu, int c, bool alt, MEVENT *mevent);
 
 extern void st_menu_set_direct_color(bool direct_color);
 

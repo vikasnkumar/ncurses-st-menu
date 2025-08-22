@@ -2810,6 +2810,12 @@ cmdbar_draw(struct ST_CMDBAR *cmdbar)
 	wnoutrefresh(cmdbar->window);
 }
 
+bool
+st_cmdbar_driver(struct ST_CMDBAR *cmdbar, int c, bool alt, MEVENT *mevent)
+{
+    return cmdbar_driver(cmdbar, c, alt, mevent);
+}
+
 static bool
 cmdbar_driver(struct ST_CMDBAR *cmdbar, int c, bool alt, MEVENT *mevent)
 {
