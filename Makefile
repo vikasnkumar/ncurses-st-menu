@@ -82,6 +82,8 @@ st_menu.pc.install:
 
 install: libst_menu.so libst_menu.a $(PKG_CONFIG_TARGET)
 	tools/install.sh data include/st_menu.h $(INCLUDEDIR)
+	tools/install.sh data include/st_curses.h $(INCLUDEDIR)
+	tools/install.sh data include/st_panel.h $(INCLUDEDIR)
 	tools/install.sh bin libst_menu.so $(LIBDIR)
 	tools/install.sh bin libst_menu.a $(LIBDIR)
 
