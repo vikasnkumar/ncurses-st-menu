@@ -19,7 +19,6 @@ else
 endif
 
 ifdef PKG_CONFIG
-PKG_CONFIG_PATH = `$(PKG_CONFIG) --variable pc_path pkg-config|cut -d: -f1`
 PKG_CONFIG_TARGET = st_menu.pc.install
 endif
 
@@ -79,7 +78,7 @@ ifeq "$(BUILD_OS)" "windows"
 endif
 
 st_menu.pc.install:
-	tools/install.sh data st_menu.pc $(PKG_CONFIG_PATH)
+	tools/install.sh data st_menu.pc $(LIBDIR)/pkgconfig
 
 install: libst_menu.so libst_menu.a $(PKG_CONFIG_TARGET)
 	tools/install.sh data include/st_menu.h $(INCLUDEDIR)

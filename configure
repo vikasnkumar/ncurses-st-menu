@@ -3940,8 +3940,6 @@ unknown)
   ;;
 esac
 
-# Autoupdate added the next two lines to ensure that your configure
-# script's behavior did not change.  They are probably safe to remove.
 ac_header= ac_cache=
 for ac_item in $ac_header_c_list
 do
