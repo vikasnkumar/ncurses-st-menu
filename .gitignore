@@ -64,3 +64,7 @@ simple2
 st_menu.pc
 config.make
 autom4te.cache
+build
+configure~
+tags
+TAGS

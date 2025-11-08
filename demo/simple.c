@@ -1,4 +1,4 @@
-
+#include <st_config.h>
 #ifdef HAVE_LANGINFO_CODESET
 #include <langinfo.h>
 #endif
