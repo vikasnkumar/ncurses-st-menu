@@ -7,6 +7,7 @@ include(InstallRequiredSystemLibraries)
 include(GNUInstallDirs)
 list(APPEND CMAKE_INSTALL_RPATH ${CMAKE_INSTALL_PREFIX}/lib)
 
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -fPIC -Wno-conversion")
 check_include_file("string.h" HAVE_STRING_H)
 check_include_file("ctype.h" HAVE_CTYPE_H)
 check_include_file("stdlib.h" HAVE_STDLIB_H)
